@@ -16,3 +16,7 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/* estilos globales para todo el proyecto */
+/* body {
+  background: #333;
+} */
