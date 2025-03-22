@@ -2,10 +2,9 @@ import { montserrat } from './ui/fonts';
 import './ui/global.css';
 import { Metadata } from 'next';
 
-export const meta: Metadata = {
+export const metadata: Metadata = {
   title: 'LimberDeveloper001',
   description: 'Limbeloper is the best company for developers.',
-  metadataBase: new URL('https://companydeveloper.com'),
 };
 
 export default function RootLayout({
