@@ -7,6 +7,12 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Invoices',
+}
+
 export default async function Page(
     props: {
         searchParams?: Promise<{
@@ -17,7 +23,7 @@ export default async function Page(
     const searchParams = await props.searchParams;
     const query = searchParams?.query || '';
     const currentPage = Number(searchParams?.page) || 1;
-    const pagesAll= await fetchInvoicesPages(query);
+    const pagesAll = await fetchInvoicesPages(query);
     return (
         <div className="w-full">
             <div className="flex w-full items-center justify-between">
